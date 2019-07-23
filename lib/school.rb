@@ -1,3 +1,5 @@
+require "pry"
+
 # code here!
 class School
     attr_accessor
@@ -23,7 +25,7 @@ class School
 
     def sort
         roster.each do |grade, students|
-            students.sort
+            roster[grade] = students.sort
         end
         return roster
     end
